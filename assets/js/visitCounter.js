@@ -8,6 +8,7 @@ var counterContainer = document.querySelector(".website-counter");
 
 // Retrieve visitor count using localStorage.getItem():
 var visitCount = localStorage.getItem("page_view");
+alert(visitCount);
 
 // Check if "page_view" entry is present:
 if (visitCount) {
@@ -23,6 +24,7 @@ if (visitCount) {
     // Add entry for key="page_view":
     localStorage.setItem("page_view", 1);
 }
+alert("next visit count is " + visitCount);
 
 // Display visitCount on page using element.innerHTML:
 counterContainer.innerHTML = visitCount;
